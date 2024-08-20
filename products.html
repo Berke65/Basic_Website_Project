@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://cdn.dsmcdn.com/seller-store/uploads/374290/e75cc165-4d1e-4ff0-91ec-9e0c2cf98287.jpeg">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title> Hakan Mobilya </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  
+
+  </head>
+
+  <body>
+
+    <script src="https://kit.fontawesome.com/26f3087776.js" crossorigin="anonymous"></script>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>HAKAN <em>MOBİLYA</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Ana Sayfa
+                      <span class="sr-only">(current)</span>
+                    </a>
+                </li> 
+
+                <li class="nav-item active">
+                  <a class="nav-link" href="products.html">Ürünler</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="about-us.html">Hakkımızda</a>   
+                </li>
+            
+                <li class="nav-item"><a class="nav-link" href="contact.html">İletişim</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+    <!-- Page Content -->
+    <div class="page-heading about-heading header-text" style="background-image: url(saksi_banner2.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-content">
+              <h2>ÜRÜNLER</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="centered-buttons">
+      <button id="filter-button" onclick="toggleMenu('filter-menu')"><i class="fa-solid fa-filter"></i> Filtrele</button>
+  </div>
+  
+  <div id="filter-menu" class="filterMenu">
+    <button class="close-button" onclick="deleteFilter()">Temizle</button>
+    <h3>Filtreleme Menüsü</h3>
+    <br>
+    <div class="filter-group">
+      <div class="checkbox-group">
+        <h4>Renk Seçimi</h4>
+        <div class="button-container">
+          <div class="round-button" onclick="toggleCheckbox('color-checkbox-siyah')">
+            <input type="checkbox" id="color-checkbox-siyah" class="color-checkbox" onclick="event.stopPropagation();" onchange="handleCheckboxChange('color-checkbox-siyah')">
+            <img src="assets/images/siyah-buton.jpg" alt="siyah">
+            <span class="button-text">siyah</span>
+        </div>
+        <div class="round-button" onclick="toggleCheckbox('color-checkbox-ahsap')">
+            <input type="checkbox" id="color-checkbox-ahsap" class="color-checkbox" onclick="event.stopPropagation();" onchange="handleCheckboxChange('color-checkbox-ahsap')">
+            <img src="assets/images/ahsap-buton.jpg" alt="ahşap">
+            <span class="button-text">ahşap</span>
+        </div>
+            <div class="round-button" onclick="toggleCheckbox('color-checkbox-beyaz')">
+              <input type="checkbox" id="color-checkbox-beyaz" class="color-checkbox" onclick="event.stopPropagation();" onchange="handleCheckboxChange('color-checkbox-beyaz')">
+                <img src="assets/images/beyaz-buton.jpg" alt="beyaz">
+                <span class="button-text">beyaz</span>
+            </div>
+            <div class="round-button" onclick="toggleCheckbox('color-checkbox-siyah-gold')">
+              <input type="checkbox" id="color-checkbox-siyah-gold" class="color-checkbox" onclick="event.stopPropagation();" onchange="handleCheckboxChange('color-checkbox-siyah-gold')">
+                <img src="assets/images/siyah-gold-buton.jpg" alt="siyah-gold">
+                <span class="button-text">siyah-gold</span>
+            </div>
+            <div class="round-button" onclick="toggleCheckbox('color-checkbox-beyaz-gold')">
+              <input type="checkbox" id="color-checkbox-beyaz-gold" class="color-checkbox" onclick="event.stopPropagation();" onchange="handleCheckboxChange('color-checkbox-beyaz-gold')">
+                <img src="assets/images/beyaz-gold-buton.jpg" alt="beyaz-gold">
+                <span class="button-text">beyaz-gold</span>
+            </div>
+        </div>
+    </div>
+        <hr>
+        <div class="checkbox-group">
+            <h4>Ürün Türü Seçimi</h4>
+            <div>
+                <input type="checkbox" id="type-saksi" name="type" value="saksi">
+                <label for="type-saksi">Saksılar</label>
+            </div>
+            <div>
+                <input type="checkbox" id="type-kahveKosesi" name="type" value="kahveKosesi">
+                <label for="type-kahveKosesi">Eko Kahve Köşeleri</label>
+          </div>
+          <div>
+                <input type="checkbox" id="type-kahveStandi" name="type" value="kahveStandi">
+                <label for="type-kahveStandi">Kahve Standları</label>
+          </div>
+          <div>
+                <input type="checkbox" id="type-askilik" name="type" value="askilik">
+                <label for="type-askilik">Aynalı Askılıklar</label>
+          </div>
+          <div>
+              <input type="checkbox" id="type-sehpa" name="type" value="sehpa">
+              <label for="type-sehpa">Anı Sehpaları</label>
+          </div>
+          <div>
+            <input type="checkbox" id="type-baharatlik" name="type" value="baharatlik">
+            <label for="type-baharatlik">Baharatlıklar</label>
+          </div>
+          <div>
+                <input type="checkbox" id="type-tvUnite" name="type" value="tvUnite">
+                <label for="type-tvUnite">Tv Üniteleri</label>
+          </div>
+          <div>
+            <input type="checkbox" id="type-aynaliSaksi" name="type" value="aynaliSaksi">
+            <label for="type-aynaliSaksi">Aynalı Saksılar</label>
+          </div>
+          <div>
+            <input type="checkbox" id="type-vestiyer" name="type" value="vestiyer">
+            <label for="type-vestiyer">Vestiyer</label>
+           </div>
+        </div>
+    </div>
+    <hr>
+    <div class="filter-group">
+        <br>
+        <button onclick="applyFilter()">Filtrele</button>
+    </div>
+</div>
+
+    <!-- Bildirim penceresi -->
+    <div id="notification" class="notification hidden">Filtreleme Başarılı!</div>
+    
+<div class="products">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details.html"><img src="assets/images/SAKSILAR/KARE SAKSI/Image.jpeg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details.html"><h4>Dekoratif Ahşap Kare 3'lü Saksı Seti</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 askilik ahsap">
+        <div class="product-item">
+          <a href="product-details2.html"><img src="assets/images/anasayfa_urun5.jpeg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details2.html"><h4>Çam Rengi Dekoratif Dikdörtgen Aynalı Askılık</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 kahveKosesi beyaz">
+        <div class="product-item">
+          <a href="product-details3.html"><img src="assets/images/anasayfa_urun4.jpeg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details3.html"><h4>Beyaz Renk Dekoratif Kahve Köşesi</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 sehpa beyaz">
+        <div class="product-item">
+          <a href="product-details4.html"><img src="assets/images/anasayfa_urun3.jpeg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details4.html"><h4>Gold Ayaklı Beyaz Anı Sehpası</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi siyah">
+        <div class="product-item">
+          <a href="product-details5.html"><img src="assets/images/SiyahMermerSaksi/02/DOLULAR/SIYAH AYAK/DSC_2999.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details5.html"><h4>Siyah Ayaklı 3'lü Kale Model Saksı</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 aynaliSaksi">
+        <div class="product-item">
+          <a href="product-details7.html"><img src="assets/images/SiyahMermerSaksi/03/DUZ AYNA/DSC_3057.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details7.html"><h4>Düz Aynalı Saksı Seti (Kahve Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+     
+
+      <div class="col-md-3 saksi siyah">
+        <div class="product-item">
+          <a href="product-details9.html"><img src="assets/images/SAKSILAR/SİYAH YUVARLAKSAKSI/Image (2).jpeg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details9.html"><h4>Siyah 3'lü Yuvarlak Saksı Seti (Kahve Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details10.html"><img src="assets/images/SAKSILAR/ÇAM RENGİ YUVARLAK SAKSI/Image (2).jpeg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details10.html"><h4>Çam Renk 3'lü Yuvarlak Saksı Seti (Kahve Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi siyah">
+        <div class="product-item">
+          <a href="product-details11.html"><img src="assets/images/ERKAMETLİSSAKSILAR/Siyah Sekizgenler/KRC_3057.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details11.html"><h4>Mermer Desenli Sekizgen Gold Şeritli Dekoratif Saksı Seti</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 askilik siyah">
+        <div class="product-item">
+          <a href="product-details29.html"><img src="assets/images/aynaliAskiliklar/model3/DSC_3133.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details29.html"><h4>Dekoratif Mermer Desenli Oval Aynalı Askılık</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details14.html"><img src="assets/images/ERKAMETLİSSAKSILAR/kahverengi karemodel/KRC_3114.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details14.html"><h4>Çam Rengi Kare Model Gold Şeritli Saksı Seti 3'lü</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 saksi siyah">
+        <div class="product-item">
+          <a href="product-details12.html"><img src="assets/images/ERKAMETLİSSAKSILAR/siyah karemodel/KRC_3123.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details12.html"><h4>Siyah Renk Kare Model Gold Şeritli Saksı Seti 3'lü</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details13.html"><img src="assets/images/ERKAMETLİSSAKSILAR/Kahverengi Sekizgenler/KRC_3070.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details13.html"><h4>Sekizgen Çam Renk Gold Şeritli Saksı Seti</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 askilik ahsap">
+        <div class="product-item">
+          <a href="product-details27.html"><img src="assets/images/aynaliAskiliklar/model2/DSC_3122.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details27.html"><h4>Çam Renk Sekizgen Aynalı Askılık</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 kahveStandi ahsap">
+        <div class="product-item">
+          <a href="product-details23.html"><img src="assets/images/kahveStandi/01/DSC_3142.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details23.html"><h4>Dekoratif Çam Renk Kahve Standı</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+    
+
+      <div class="col-md-3 aynaliSaksi">
+        <div class="product-item">
+          <a href="product-details8.html"><img src="assets/images/SiyahMermerSaksi/03/KESME AYNA/DSC_3056.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details8.html"><h4>Çizgili Aynalı Saksı Seti (Kahve Ayak) </h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details17.html"><img src="assets/images/SAKSILAR/ÇAM RENKİ KALEMODEL/Image (1).jpeg" alt=""></a>
+          <div class="down-content">
+            <a href=""><h4>Çam Rengi Kale Model Saksı</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi siyah">
+        <div class="product-item">
+          <a href="product-details25.html"><img src="assets/images/SAKSILAR/SİYAH MERMER SAKSI/01/DOLULAR/KAHVE AYAK/DSC_2989.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details25.html"><h4>Mermer Desenli Saksı Seti (Kahve Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3 aynaliSaksi">
+        <div class="product-item">
+          <a href="product-details28.html"><img src="assets/images/SiyahMermerSaksi/03/KESME AYNA/DSC_3059.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details28.html"><h4> Çizgili Aynalı Saksı Seti (Siyah Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 baharatlik siyah">
+        <div class="product-item">
+          <a href="product-details18.html"><img src="assets/images/BAHARATLIK/siyah/IMG-20220825-WA0033.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details18.html"><h4>Dekoratif Siyah Mermer Desenli Baharatlık</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 aynaliSaksi">
+        <div class="product-item">
+          <a href="product-details30.html"><img src="assets/images/SiyahMermerSaksi/03/DUZ AYNA/DSC_3060.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details30.html"><h4>Düz Aynalı Saksı Seti (Siyah Ayak) </h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi beyaz">
+        <div class="product-item">
+          <a href="product-details16.html"><img src="assets/images/ERKAMETLİSSAKSILAR/beyaz karemodel/KRC_3103.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details16.html"><h4>Gold Şeritli Kare Model Beyaz Saksı Seti 3'lü</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 askilik beyaz">
+        <div class="product-item">
+          <a href="product-details31.html"><img src="assets/images/aynaliAskiliklar/model1/aa.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details31.html"><h4>Beyaz Dikdörtgen Aynalı Askılık</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi beyaz">
+        <div class="product-item">
+          <a href="product-details50.html"><img src="assets/images/SAKSILAR/Beyaz Kahve Ayaklı Kale Saksı Model/WhatsApp Image 2023-11-14 at 13.33.30.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details50.html"><h4>Beyaz Kale Saksı Seti (Kahve Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi beyaz">
+        <div class="product-item">
+          <a href="product-details51.html"><img src="assets/images/SAKSILAR/Beyaz Kahve Ayaklı Yuvarlak Saksı Model/WhatsApp Image 2023-11-14 at 13.19.52.jpeg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details51.html"><h4>Beyaz Yuvarlak Saksı Seti (Kahve Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi beyaz">
+        <div class="product-item">
+          <a href="product-details52.html"><img src="assets/images/SAKSILAR/Beyaz Kare Düz Şeritli Kahve Ayaklı Saksı Model/WhatsApp Image 2023-11-14 at 13.18.21.jpeg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details52.html"><h4>Beyaz Düz Şeritli Saksı Seti (Kahve Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi beyaz">
+        <div class="product-item">
+          <a href="product-details53.html"><img src="assets/images/SAKSILAR/Beyaz Kare Düz Şeritli Siyah Ayaklı Saksı Model/WhatsApp Image 2023-11-14 at 13.19.42.jpeg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details53.html"><h4>Beyaz Düz Şeritli Saksı Seti (Siyah Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 askilik beyaz">
+        <div class="product-item">
+          <a href="product-details32.html"><img src="assets/images/aynaliAskiliklar/model1/DSC_3115.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details32.html"><h4>Dekoratif Beyaz Renk Oval Aynalı Askılık</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi beyaz">
+        <div class="product-item">
+          <a href="product-details54.html"><img src="assets/images/SAKSILAR/Beyaz Kare Sekizgen Şeritli Kahve Ayaklı Saksı Model/WhatsApp Image 2023-11-14 at 13.18.37.jpeg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details54.html"><h4>Beyaz Şeritli Saksı Seti (Kahve Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 askilik beyaz">
+        <div class="product-item">
+          <a href="product-details33.html"><img src="assets/images/aynaliAskiliklar/model1/DSC_3118.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details33.html"><h4>Dekoratif Beyaz Renk Sekizgen Aynalı Askılık</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 baharatlik beyaz">
+        <div class="product-item">
+          <a href="product-details34.html"><img src="assets/images/BAHARATLIK/beyaz/IMG-20220825-WA0021.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details34.html"><h4>Beyaz Baharatlık</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+   
+
+      
+      <div class="col-md-3 askilik siyah">
+        <div class="product-item">
+          <a href="product-details35.html"><img src="assets/images/aynaliAskiliklar/model3/DSC_3136.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details35.html"><h4>Dekoratif Mermer Desenli Aynalı Askılık</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi beyaz">
+        <div class="product-item">
+          <a href="product-details55.html"><img src="assets/images/SAKSILAR/Beyaz Kare Sekizgen Şeritli Siyah Ayaklı Saksı Model/WhatsApp Image 2023-11-14 at 13.18.05.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details55.html"><h4>Beyaz Renk Şeritli Saksı Seti (Siyah Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi beyaz">
+        <div class="product-item">
+          <a href="product-details15.html"><img src="assets/images/ERKAMETLİSSAKSILAR/Beyaz Sekizgenler/KRC_3079.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details15.html"><h4>Beyaz Sekizgen Gold Şeritli Saksı Seti</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 askilik siyah">
+        <div class="product-item">
+          <a href="product-details36.html"><img src="assets/images/aynaliAskiliklar/model3/DSC_3135.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details36.html"><h4>Mermer Desenli Dikdörtgen Aynalı Askılık</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 baharatlik ahsap">
+        <div class="product-item">
+          <a href="product-details37.html"><img src="assets/images/BAHARATLIK/kahve/IMG-20220825-WA0036.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details37.html"><h4>Çam Renk Baharatlık</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi beyaz">
+        <div class="product-item">
+          <a href="product-details57.html"><img src="assets/images/SAKSILAR/Beyaz Siyah Ayaklı Yuvarlak Saksı Model/WhatsApp Image 2023-11-14 at 13.20.06.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details57.html"><h4>Beyaz Yuvarlak Saksı Seti (Siyah Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 askilik ahsap">
+        <div class="product-item">
+          <a href="product-details38.html"><img src="assets/images/aynaliAskiliklar/model2/DSC_3123.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details38.html"><h4>Dekoratif Çam Renk Oval Aynalı Askılık</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi beyaz">
+        <div class="product-item">
+          <a href="product-details56.html"><img src="assets/images/SAKSILAR/Beyaz Siyah Ayaklı Kale Saksı Model/WhatsApp Image 2023-11-14 at 13.33.38 (1).jpeg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details56.html"><h4>Beyaz Kale Saksı Seti (Siyah Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 sehpa siyah">
+        <div class="product-item">
+          <a href="product-details42.html"><img src="assets/images/anı sehpa/1_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details42.html"><h4>Siyah Renk Gold Ayaklı Anı Sehpası</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 tvUnite beyaz-gold">
+        <div class="product-item">
+          <a href="product-details39.html"><img src="assets/images/tv ünitesi/beyaz-gold tv ünitesi.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details39.html"><h4>Beyaz-Gold Tv Ünitesi</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details49.html"><img src="assets/images/SAKSILAR/Ahşap Siyah Ayaklı Yuvarlak Saksı Model/WhatsApp Image 2023-11-14 at 13.17.58 (1).jpeg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details49.html"><h4>Ceviz Rengi Yuvarlak Saksı Seti (Siyah Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 kahveStandi beyaz">
+        <div class="product-item">
+          <a href="product-details41.html"><img src="assets/images/kahveStandi/03/DSC_3150.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details41.html"><h4>Beyaz Kahve Standı</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 tvUnite beyaz">
+        <div class="product-item">
+          <a href="product-details40.html"><img src="assets/images/tv ünitesi/beyaz tv ünitesi.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details40.html"><h4>Beyaz Tv Ünitesi</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details58.html"><img src="assets/images/SAKSILAR/Koyu Ahşap Kahve Ayaklı Yuvarlak Saksı Model/WhatsApp Image 2023-11-14 at 13.18.01.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details58.html"><h4>Ceviz Rengi Yuvarlak Saksı Seti (Kahve Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 kahveKosesi siyah">
+        <div class="product-item">
+          <a href="product-details43.html"><img src="assets/images/EKOKAHVEKÖŞESİ/siyah/Image (12).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details43.html"><h4>Mermer Desenli Eko Kahve Köşesi</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi siyah">
+        <div class="product-item">
+          <a href="product-details44.html"><img src="assets/images/SiyahMermerSaksi/02/DOLULAR/KAHVE AYAK/DSC_3003.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details44.html"><h4>Mermer Desenli Kale Model Saksı Seti 3'lü (Kahve Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 tvUnite ahsap">
+        <div class="product-item">
+          <a href="product-details45.html"><img src="assets/images/tv ünitesi/ahsap tv ünitesi.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details45.html"><h4>Çam Rengi Tv Ünitesi</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 kahveKosesi ahsap">
+        <div class="product-item">
+          <a href="product-details46.html"><img src="assets/images/EKOKAHVEKÖŞESİ/kahve/Image (5).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details46.html"><h4>Ceviz Rengi Eko Kahve Köşesi</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="col-md-3 tvUnite siyah">
+        <div class="product-item">
+          <a href="product-details47.html"><img src="assets/images/tv ünitesi/siyah tv ünitesi.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details47.html"><h4>Siyah Tv Ünitesi</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="col-md-3 tvUnite siyah-gold">
+        <div class="product-item">
+          <a href="product-details48.html"><img src="assets/images/tv ünitesi/siyah-gold tv ünitesi.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details48.html"><h4>Siyah-Gold Tv Ünitesi</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi siyah">
+        <div class="product-item">
+          <a href="product-details21.html"><img src="assets/images/SAKSILAR/SİYAH MERMER SAKSI/01/DOLULAR/SİYAH AYAK/DSC_2980.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details21.html"><h4>Mermer Desenli Yuvarlak Saksı Seti (Siyah Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 kahveStandi siyah">
+        <div class="product-item">
+          <a href="product-details59.html"><img src="assets/images/kahveStandi/02/DSC_3147.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details59.html"><h4>Mermer Desenli Kahve Standı</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <!--BURADAN İTİBAREN(21 ÜRÜN EKLENDİ -SADECE BEKEDEKİ ÜRÜNLER-)--------------------------------->
+
+
+      <div class="col-md-3 kahveKosesi ahsap">
+        <div class="product-item">
+          <a href="product-details60.html"><img src="assets/images/hghakan new img/Ahşap Renk Kahve Köşesi/ahşap2/1_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details60.html"><h4>Çam Renk Kahve Köşesi</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 sehpa siyah">
+        <div class="product-item">
+          <a href="product-details61.html"><img src="assets/images/hghakan new img/anı sehpa gold ayak/mermer/1_org_zoom (1).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details61.html"><h4>Gold Ayaklı Mermer Anı Sehpası</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 sehpa beyaz">
+        <div class="product-item">
+          <a href="product-details62.html"><img src="assets/images/hghakan new img/anı sehpa metal siyah ayak/beyaz/1_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details62.html"><h4>Siyah Ayaklı Beyaz Anı Sehpası</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 siyah sehpa">
+        <div class="product-item">
+          <a href="product-details63.html"><img src="assets/images/hghakan new img/anı sehpa metal siyah ayak/siyah mermer/1_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details63.html"><h4>Siyah Ayaklı Siyah Mermer Anı Sehpası</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 sehpa siyah">
+        <div class="product-item">
+          <a href="product-details64.html"><img src="assets/images/hghakan new img/anı sehpa metal siyah ayak/siyah/1_org_zoom (1).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details64.html"><h4>Siyah Ayaklı Siyah Anı Sehpası</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 sehpa ahsap">
+        <div class="product-item">
+          <a href="product-details65.html"><img src="assets/images/hghakan new img/anı sehpa metal siyah ayak/çam/1_org_zoom (1).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details65.html"><h4>Siyah Ayaklı Çam Renk Anı Sehpası</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 vestiyer siyah beyaz">
+        <div class="product-item">
+          <a href="product-details66.html"><img src="assets/images/hghakan new img/aynalı vestiyer/beyaz - siyah mermer/1_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details66.html"><h4>Beyaz - Siyah Mermer Aynalı Vestiyer</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 vestiyer beyaz">
+        <div class="product-item">
+          <a href="product-details67.html"><img src="assets/images/hghakan new img/aynalı vestiyer/beyaz/1_org_zoom (1).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details67.html"><h4>Dekoratif Beyaz Aynalı Vestiyer</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 vestiyer siyah">
+        <div class="product-item">
+          <a href="product-details68.html"><img src="assets/images/hghakan new img/aynalı vestiyer/siyah - mermer/1_org_zoom (1).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details68.html"><h4>Siyah - Mermer Aynalı Vestiyer</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 vestiyer siyah ahsap">
+        <div class="product-item">
+          <a href="product-details69.html"><img src="assets/images/hghakan new img/aynalı vestiyer/siyah - çam/1_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details69.html"><h4>Siyah - Çam Aynalı Vestiyer</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 vestiyer siyah beyaz">
+        <div class="product-item">
+          <a href="product-details70.html"><img src="assets/images/hghakan new img/aynalı vestiyer/siyah mermer - beyaz/1_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details70.html"><h4>Siyah Mermer - Beyaz Aynalı Vestiyer</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 vestiyer siyah">
+        <div class="product-item">
+          <a href="product-details71.html"><img src="assets/images/hghakan new img/aynalı vestiyer/siyah/1_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details71.html"><h4>Dekoratif Siyah Aynalı Vestiyer</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 vestiyer ahsap siyah">
+        <div class="product-item">
+          <a href="product-details72.html"><img src="assets/images/hghakan new img/aynalı vestiyer/çam - siyah/1_org_zoom (1).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details72.html"><h4>Dekoratif Çam - Siyah Aynalı Vestiyer</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 vestiyer ahsap">
+        <div class="product-item">
+          <a href="product-details73.html"><img src="assets/images/hghakan new img/aynalı vestiyer/çam/1_org_zoom (1).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details73.html"><h4>Dekoratif Çam Aynalı Vestiyer</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 baharatlik beyaz">
+        <div class="product-item">
+          <a href="product-details74.html"><img src="assets/images/hghakan new img/Beyaz Mermer Desenli Ahşap Baharatlık/beyaz mermer/1_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details74.html"><h4>Beyaz Mermer Desenli Baharatlık</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 baharatlik ahsap">
+        <div class="product-item">
+          <a href="product-details75.html"><img src="assets/images/hghakan new img/Ceviz Rengi Ahşap Baharatlık/ceviz/1_org_zoom (1).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details75.html"><h4>Dekoratif Ceviz Rengi Baharatlık</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 siyah saksi">
+        <div class="product-item">
+          <a href="product-details76.html"><img src="assets/images/hghakan new img/Kare Gold Şeritli 3' Lü Saksı Seti/siyah mermer/1_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details76.html"><h4>Mermer Desenli Kare Model Gold Şeritli 3'lü Saksı Seti</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 siyah saksi">
+        <div class="product-item">
+          <a href="product-details77.html"><img src="assets/images/hghakan new img/Siyah Ahşap Ayaklı Çizgili Kare Model Saksı Seti/siyah/0_org_zoom (1).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details77.html"><h4>Siyah Çizgili Kare Saksı Seti (Kahve Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 siyah saksi">
+        <div class="product-item">
+          <a href="product-details78.html"><img src="assets/images/hghakan new img/Siyah Renk Siyah Ayaklı Çizgili Kare Model Saksı Seti/siyah 2/0_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details78.html"><h4>Siyah Çizgili Kare Saksı Seti (Siyah Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details79.html"><img src="assets/images/hghakan new img/Çam Renk Ahşap Ayaklı Çizgili Kare Model Saksı Seti/Çam Rengi/0_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details79.html"><h4>Çam Rengi Çizgili Kare Saksı Seti (Kahve Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details80.html"><img src="assets/images/hghakan new img/Çam Renk Siyah Ayaklı Çizgili Kare Model Saksı Seti/çam rengi 2/0_org_zoom (1).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details80.html"><h4>Çam Rengi Çizgili Kare Saksı Seti (Siyah Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <!--ERDEM İN ÜRÜNLER ------------------------------------------------------------------------------>
+
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details83.html"><img src="assets/images/hghakan new img/e-kalemodel saksılar/ceviz rengi kahve ayak/0_org_zoom (1).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details83.html"><h4>Ceviz Rengi Kale Model Saksı Seti (Kahve Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details84.html"><img src="assets/images/hghakan new img/e-kalemodel saksılar/ceviz rengi siyah ayak/0_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details84.html"><h4>Ceviz Renk Kale Model Saksı Seti (Siyah Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi siyah">
+        <div class="product-item">
+          <a href="product-details85.html"><img src="assets/images/hghakan new img/e-kalemodel saksılar/siyah renk kahve ayak/0_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details85.html"><h4>Siyah Renk Kale Model Saksı Seti (Kahve Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi siyah">
+        <div class="product-item">
+          <a href="product-details86.html"><img src="assets/images/hghakan new img/e-kalemodel saksılar/siyah renk siyah ayak/1_org_zoom (1).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details86.html"><h4>Siyah Renk Kale Model Saksı Seti (Siyah Ayak) </h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details87.html"><img src="assets/images/hghakan new img/e-kalemodel saksılar/çam rengi siyah ayak/0_org_zoom (1).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details87.html"><h4>Çam Renk Kale Model Saksı Seti (Siyah Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi siyah">
+        <div class="product-item">
+          <a href="product-details89.html"><img src="assets/images/hghakan new img/e-yuvarlak modeller/siyah yuvarlak siyah ayak/0_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details89.html"><h4> Siyah Renk Yuvarlak Saksı Seti (Siyah Ayak) </h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details90.html"><img src="assets/images/hghakan new img/e-yuvarlak modeller/çam rengi siyah ayak/1_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details90.html"><h4>Çam Rengi Yuvarlak Saksı Seti (Siyah Ayak)</h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi siyah">
+        <div class="product-item">
+          <a href="product-details91.html"><img src="assets/images/hghakan new img/e-çapraz çizgili kare saksılar/siyah 1/0_org_zoom (1).jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details91.html"><h4>Siyah Renk Çizgili Kare Saksı Seti (Kahve Ayak) </h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi siyah">
+        <div class="product-item">
+          <a href="product-details92.html"><img src="assets/images/hghakan new img/e-çapraz çizgili kare saksılar/siyahh 2/0_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details92.html"><h4> Siyah Renk Çizgili Kare Saksı Seti (Siyah Ayak) </h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details93.html"><img src="assets/images/hghakan new img/e-çapraz çizgili kare saksılar/çam rengi kahve ayak/0_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details93.html"><h4>Çam Renk Çizgili Kare Saksı Seti (Kahve Ayak) </h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 saksi ahsap">
+        <div class="product-item">
+          <a href="product-details94.html"><img src="assets/images/hghakan new img/e-çapraz çizgili kare saksılar/çam rengi siyah ayak/0_org_zoom.jpg" alt=""></a>
+          <div class="down-content">
+            <a href="product-details94.html"><h4> Çam Renk Çizgili Kare Saksı Seti (Siyah Ayak) </h4></a>
+            Detaylı bilgi için tıklayınız
+          </div>
+        </div>
+      </div>
+
+      <!--- erdem + beke = toplam 35 yeni ürün eklendi-->
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="inner-content">
+          <p>Copyright © 2023 - Designed By BEKER Software</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script>
+
+
+function toggleMenu() {
+	var menu = document.getElementById('filter-menu');
+	menu.classList.toggle("active");
+}
+
+document.addEventListener("click", function(event) {
+	var filterMenu = document.getElementById("filter-menu");
+	var sortMenu = document.getElementById("sort-menu");
+
+	var isFilterButton = event.target === document.getElementById("filter-button");
+	var isSortButton = event.target === document.getElementById("sort-button");
+
+	if (!isFilterButton && !filterMenu.contains(event.target)) {
+		filterMenu.classList.remove("active");
+	}
+
+	if (!isSortButton && !sortMenu.contains(event.target)) {
+		sortMenu.classList.remove("active");
+	}
+});
+function toggleSort() {
+            var menu = document.getElementById('sort-menu');
+            menu.classList.toggle('active');
+        }
+        document.addEventListener("click", function(event) {
+	var filterMenu = document.getElementById("filter-menu");
+	var sortMenu = document.getElementById("sort-menu");
+
+	var isFilterButton = event.target === document.getElementById("filter-button");
+	var isSortButton = event.target === document.getElementById("sort-button");
+
+	if (!isFilterButton && !filterMenu.contains(event.target)) {
+		filterMenu.classList.remove("active");
+	}
+
+	if (!isSortButton && !sortMenu.contains(event.target)) {
+		sortMenu.classList.remove("active");
+	}
+});
+
+
+function toggleCheckbox(checkboxId) {
+  var checkbox = document.getElementById(checkboxId);
+  checkbox.checked = !checkbox.checked; // Checkbox durumunu tersine çevir
+  handleCheckboxChange(checkboxId); // Checkbox durumu değiştiğinde tetiklenen işlemleri gerçekleştir
+}
+
+
+function handleCheckboxChange(checkboxId) {
+    var checkbox = document.getElementById(checkboxId);
+
+    if (!checkbox) {
+        console.error("Checkbox not found with ID:", checkboxId);
+        return;
+    }
+
+    // Checkbox'un doğrudan üst öğesini bulma
+    var roundButton = findRoundButton(checkbox);
+
+    if (!roundButton) {
+        console.error("Round button not found for checkbox with ID:", checkboxId);
+        return;
+    }
+
+    // Checkbox işaretli değilse, varsayılan renge çevir
+    if (!checkbox.checked) {
+        console.log("Checkbox checked:", checkbox.checked);
+        roundButton.style.borderColor = '#000'; // Varsayılan renk
+        return;
+    }
+
+    // Checkbox işaretliyken round button'un stilini değiştir
+    console.log("Checkbox checked:", checkbox.checked);
+    roundButton.style.borderColor = '#ddbc00'; // Site renklerinde
+}
+
+// Checkbox'un doğrudan üst öğesini bulan yardımcı fonksiyon
+function findRoundButton(element) {
+  while (element && element.classList) {
+    if (element.classList.contains('round-button')) {
+      return element;
+    }
+    element = element.parentNode;
+  }
+  return null;
+};
+
+function applyFilterFromURL() {
+    // URL'den type parametresini al
+    var urlParams = new URLSearchParams(window.location.search);
+    var productType = urlParams.get('type');
+
+    // Eğer type parametresi varsa, ilgili checkbox'u işaretle ve filtreleme fonksiyonunu çağır
+    if (productType) {
+        var typeCheckbox = document.getElementById('type-' + productType);
+        if (typeCheckbox) {
+            typeCheckbox.checked = true;
+            applyFilter();
+        }
+    }
+
+    // Sayfayı yenilediğinizde type parametresini URL'den kaldır
+    window.history.replaceState({}, document.title, window.location.pathname);
+}
+  
+      // Sayfa yüklendiğinde filtreleme fonksiyonunu çalıştır
+      document.addEventListener('DOMContentLoaded', applyFilterFromURL);
+
+    </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/26f3087776.js" crossorigin="anonymous"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+  </body>
+
+</html>
